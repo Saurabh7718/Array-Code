@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+public class main{
+public static void main(String[] args){
+ int arr[]={1,2,3,4,5};
+ List<Integer> even=new ArrayList<Integer>();
+List<Integer> odd=new ArrayList<Integer>();;
+ int sum=0;
+ 
+ for(int a:arr){
+     sum+=a;
+ }
+System.out.println("sum of elements in array is: "+sum);
+}
+    
+}
