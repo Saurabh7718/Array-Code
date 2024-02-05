@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+public class main{
+public static void main(String[] args){
+ int arr[]={1,2,3,4,5};
+ List<Integer> even=new ArrayList<Integer>();
+List<Integer> odd=new ArrayList<Integer>();;
+ for(int i=arr.length-1;i>=0;i--){
+      if(arr[i]%2==0){
+          even.add(arr[i]);
+      }
+      else{
+          odd.add(arr[i]);
+      }
+ }
+ for(int b:odd){
+ System.out.println("odd "+b);
+}
+for(int c:even){
+    System.out.println("even "+c);
+    
+}
+}}
