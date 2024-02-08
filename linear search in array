@@ -1,0 +1,30 @@
+import java.util.*;
+
+
+public class linear_search {
+    public static void main(String[] args) {
+        int []arr={1,0,45,23,78,423,56};
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter number do u want to search");
+        int target=sc.nextInt();
+        int index= linearSearch(arr,target);      
+         
+        if(index!=-1){
+            System.out.println("element is found");
+            
+        } 
+        else{
+            System.out.println("element is not found");
+        }
+         
+    }
+    public static int linearSearch(int []arr, int target){
+        for(int a: arr){
+            if(a==target){
+                return 1;
+            }
+        }
+        return -1;
+    }
+
+}
